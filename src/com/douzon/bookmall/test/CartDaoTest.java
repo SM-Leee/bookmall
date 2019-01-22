@@ -18,7 +18,7 @@ public class CartDaoTest {
 	//		System.out.println("책 정보가 잘못 되었습니다.");
 	//	}
 		//insertTest(8, book_no, member_no);
-	//	getListTest(member_no);
+	getListTest(1);
 		
 	}
 	
