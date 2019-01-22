@@ -75,7 +75,7 @@ public class MemberDao {
 			stmt = conn.createStatement();
 
 			// 4. SQL문 실행
-			String sql = "select customer_no, name, tel, email, password from customer";
+			String sql = "select customer_no, name, tel, email, password(password) from customer";
 			rs = stmt.executeQuery(sql);
 
 			// 5. 결과 가져오기
