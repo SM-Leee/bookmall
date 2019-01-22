@@ -74,7 +74,7 @@ public class BookDao {
 			stmt = conn.createStatement();
 
 			// 4. SQL문 실행
-			String sql = "select a.book_no, a.name, a.price, b.book_kind from book a, category b where a.category_no = b.category_no";
+			String sql = "select a.book_no, a.name, a.price, b.book_kind from book a, category b where a.category_no=b.category_no order by a.book_no asc";
 			rs = stmt.executeQuery(sql);
 
 			// 5. 결과 가져오기

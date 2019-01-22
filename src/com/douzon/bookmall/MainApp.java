@@ -23,6 +23,7 @@ public class MainApp {
 		CategoryDaoTest.insertTest("추리");
 		CategoryDaoTest.insertTest("코믹");
 		CategoryDaoTest.insertTest("시");
+		CategoryDaoTest.insertTest("예술");
 		
 		CategoryDaoTest.getListTest();
 		System.out.println("==================================================================================");
@@ -45,13 +46,16 @@ public class MainApp {
 		System.out.println("주문리스트");
 		System.out.println();
 		
-		OrderDaoTest.insertTest(10, 1, 1);
 		OrderDaoTest.insertTest("부산광역시 수영구",	1);
 		
 		OrderDaoTest.getListTest(1);
 		System.out.println("==================================================================================");
-		System.out.println("주문리스트");
+		System.out.println("주문목록리스트");
 		System.out.println();
+		
+		OrderDaoTest.insertTest(1);
+		
+		OrderDaoTest.OrderBookGetListTest(1);
 		
 		
 		

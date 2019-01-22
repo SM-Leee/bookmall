@@ -8,6 +8,7 @@ public class OrderBookVo {
 	private String order_name;
 	private Long book_no;
 	private String book_name;
+	private Long customer_no;
 	public Long getOrder_book_no() {
 		return order_book_no;
 	}
@@ -44,11 +45,19 @@ public class OrderBookVo {
 	public void setBook_name(String book_name) {
 		this.book_name = book_name;
 	}
+	public Long getCustomer_no() {
+		return customer_no;
+	}
+	public void setCustomer_no(Long customer_no) {
+		this.customer_no = customer_no;
+	}
 	@Override
 	public String toString() {
 		return "OrderBookVo [order_book_no=" + order_book_no + ", quantity=" + quantity + ", order_no=" + order_no
-				+ ", order_name=" + order_name + ", book_no=" + book_no + ", book_name=" + book_name + "]";
+				+ ", order_name=" + order_name + ", book_no=" + book_no + ", book_name=" + book_name + ", customer_no="
+				+ customer_no + "]";
 	}
+	
 	
 	
 	

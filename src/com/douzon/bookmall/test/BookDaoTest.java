@@ -16,7 +16,7 @@ public class BookDaoTest {
 		//Long book_no = BookGetListTest("흔들리지 않는 돈의 법칙");
 		//System.out.println(book_no);
 		
-		
+		getListTest();
 
 	}
 	
@@ -38,6 +38,7 @@ public class BookDaoTest {
 		List<BookVo> list = new BookDao().getList();
 		for(BookVo vo : list) {
 			System.out.println(vo.getBook_no()+", "+vo.getName()+", "+vo.getCategory_name()+", "+vo.getPrice());
+			//System.out.println(vo);
 		}
 	}
 	
