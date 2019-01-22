@@ -33,7 +33,7 @@ public class OrderDaoTest {
 		List<OrderBookVo> list = new OrderDao().getList(orderBookVo);
 		
 		for(OrderBookVo vo : list) {
-			System.out.println(vo.getBook_no()+", "+vo.getBook_name()+", "+vo.getOrder_no());
+			System.out.println(vo.getBook_no()+", "+vo.getBook_name()+", "+vo.getQuantity());
 		}
 	}
 	

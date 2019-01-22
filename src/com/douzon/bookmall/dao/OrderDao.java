@@ -192,20 +192,20 @@ public class OrderDao {
 				stmt = conn.createStatement();
 
 				// 4. SQL문 실행
-				String sql = "select a.book_no, b.name, a.order_no from order_book a, book b, orderr c where a.book_no=b.book_no and a.order_no=c.order_no and a.order_no="+orderBookVo.getOrder_no();
+				String sql = "select a.book_no, b.name, a.quantity from order_book a, book b, orderr c where a.book_no=b.book_no and a.order_no=c.order_no and a.order_no="+orderBookVo.getOrder_no();
 				rs = stmt.executeQuery(sql);
 
 				// 5. 결과 가져오기
 				while(rs.next()) {
 					Long book_no = rs.getLong(1);
 					String book_name = rs.getString(2);
-					Long order_no = rs.getLong(3);
+					Long quantity = rs.getLong(3);
 					
 
 					OrderBookVo vo = new OrderBookVo();
 					vo.setBook_no(book_no);
 					vo.setBook_name(book_name);
-					vo.setOrder_no(order_no);
+					vo.setQuantity(quantity);
 
 					list.add(vo);
 				}

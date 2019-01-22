@@ -38,7 +38,7 @@ public class MainApp {
 		System.out.println("==================================================================================");
 		System.out.println("카트 리스트");
 		System.out.println();
-		CartDaoTest.insertTest(10, 1, 1);
+		CartDaoTest.insertTest(20, 1, 1);
 		CartDaoTest.insertTest(10, 3, 1);
 		
 		CartDaoTest.getListTest(1);
